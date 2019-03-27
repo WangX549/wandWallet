@@ -1,5 +1,7 @@
 import React from 'react'
+import Button from 'antd/lib/button'
 import './index.less'
+import 'antd/dist/antd.css'
 
 export default class Life extends React.Component{
     constructor(props) {
@@ -28,8 +30,9 @@ export default class Life extends React.Component{
     render(){
         return <div className="a">
             <p>zhouwi</p>
-            <button onClick={this.handleAdd}>cli</button>
-            <button onClick={this.handleClick.bind(this)}>cli</button>
+            <Button type="primary">Button</Button>
+            <button onClick={this.handleAdd}>click</button>
+            <button onClick={this.handleClick.bind(this)}>click</button>
             <p>{this.state.count}</p>
         </div>
     }
